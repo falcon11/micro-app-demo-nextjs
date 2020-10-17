@@ -6,7 +6,7 @@ export default function ChooseImage() {
   const chooseImage = async () => {
     console.log('choose image start');
     try {
-      const data = await alita.media.chooseImage();
+      const data = await alita.media.chooseImage({ count: 3, sizeType: ['original'] });
       console.log(data);
       if (data && data.files) {
         setImages(data.files);
