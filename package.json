@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "alita-micro": "^0.0.1-beta.4",
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0"
