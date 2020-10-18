@@ -7,11 +7,17 @@ export default function Device() {
       console.log('platform:' + data);
     });
   };
+  const scanCodeApi = () => {
+    WebViewJavascriptBridge.callHandler('device.scanCode', {onlyFromCamera: true}, () => {});
+  };
   return (
     <div className={styles.container}>
       <div className={styles.list}>
         <div className={styles.cell}>
           <a onClick={platformApi}>Platform</a>
+        </div>
+        <div className={styles.cell} onClick={scanCodeApi}>
+          <a>ScanCode</a>
         </div>
       </div>
     </div>
