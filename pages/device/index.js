@@ -7,8 +7,13 @@ export default function Device() {
       console.log('platform:' + data);
     });
   };
-  const scanCodeApi = () => {
-    WebViewJavascriptBridge.callHandler('device.scanCode', {onlyFromCamera: true}, () => {});
+  const scanCodeApi = async () => {
+    try {
+      const { result } = await alita.device.scanCode();
+      alert('结果:' + result);
+    } catch (error) {
+      alert(error.message);
+    }
   };
   return (
     <div className={styles.container}>
