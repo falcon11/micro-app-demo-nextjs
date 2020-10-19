@@ -23,6 +23,11 @@ export default function Home() {
             <h3>Device &rarr;</h3>
             <p>Device Plugin</p>
           </a>
+
+          <a href="/ui" className={styles.card}>
+            <h3>UI &rarr;</h3>
+            <p>UI Plugin</p>
+          </a>
         </div>
       </main>
 
