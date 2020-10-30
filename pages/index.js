@@ -2,6 +2,24 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const plugins = [
+    {
+      name: 'Media',
+      href: '/media',
+    },
+    {
+      name: 'Device',
+      href: '/device',
+    },
+    {
+      name: 'UI',
+      href: '/ui',
+    },
+    {
+      name: 'File',
+      href: '/file',
+    },
+  ]
   return (
     <div className={styles.container}>
       <Head>
@@ -11,23 +29,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Alita Micro App</a>
+          插件列表
         </h1>
-        <div className={styles.grid}>
-          <a href="/media" className={styles.card}>
-            <h3>Media &rarr;</h3>
-            <p>Media Plugin</p>
-          </a>
-
-          <a href="/device" className={styles.card}>
-            <h3>Device &rarr;</h3>
-            <p>Device Plugin</p>
-          </a>
-
-          <a href="/ui" className={styles.card}>
-            <h3>UI &rarr;</h3>
-            <p>UI Plugin</p>
-          </a>
+        <div className={styles.list}>
+          {plugins.map(plugin => {
+            return <a key={plugin.name} className={styles.cell} href={plugin.href}>
+              <span>{plugin.name}</span>
+            </a>
+          })}
         </div>
       </main>
 

@@ -7,7 +7,7 @@ export default function ChooseImage() {
     console.log('choose image start');
     try {
       const data = await alita.media.chooseImage({ count: 3, sizeType: ['original'] });
-      console.log(data);
+      console.log('data', data);
       if (data && data.files) {
         setImages(data.files);
       }
@@ -19,6 +19,7 @@ export default function ChooseImage() {
     <div className={styles.container}>
       <button onClick={chooseImage}>ChooseImage</button>
       {images.map((image) => {
+        console.log('image:', image);
         return (
           <img
             style={{ width: '100px', height: '100px', marginTop: '1rem' }}
