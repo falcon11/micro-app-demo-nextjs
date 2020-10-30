@@ -31,6 +31,14 @@ export default function Device() {
       alert(error.message);
     }
   }
+  const getUserData = async () => {
+    try {
+      const data = await alita.device.getUserData();
+      alert(JSON.stringify(data));
+    } catch (error) {
+      alert(error.message);
+    }
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -52,6 +60,9 @@ export default function Device() {
         </div>
         <div className={styles.cell}>
           <a href={'device/microAppList'}>fetchMicroAppList</a>
+        </div>
+        <div className={styles.cell} onClick={getUserData}>
+          <a>getUserData</a>
         </div>
       </div>
     </div>
