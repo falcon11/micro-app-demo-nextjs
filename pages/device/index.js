@@ -16,6 +16,21 @@ export default function Device() {
       alert(error.message);
     }
   };
+  const systemInfoApi = async () => {
+    try {
+      const res = await alita.device.systemInfo();
+      alert(JSON.stringify(res));
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+  const openWebApi = async () => {
+    try {
+      await alita.device.openWeb('https://bing.com');
+    } catch (error) {
+      alert(error.message);
+    }
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -28,6 +43,15 @@ export default function Device() {
         </div>
         <div className={styles.cell} onClick={scanCodeApi}>
           <a>ScanCode</a>
+        </div>
+        <div className={styles.cell} onClick={systemInfoApi}>
+          <a>systemInfo</a>
+        </div>
+        <div className={styles.cell} onClick={openWebApi}>
+          <a>openWeb</a>
+        </div>
+        <div className={styles.cell}>
+          <a href={'device/microAppList'}>fetchMicroAppList</a>
         </div>
       </div>
     </div>
