@@ -39,6 +39,9 @@ export default function Device() {
       alert(error.message);
     }
   }
+  const openMicroAppWithURL = async () => {
+    alita.device.openMicroApp({ appURL: "http://127.0.0.1:3000" });
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -63,6 +66,9 @@ export default function Device() {
         </div>
         <div className={styles.cell} onClick={getUserData}>
           <a>getUserData</a>
+        </div>
+        <div className={styles.cell} onClick={openMicroAppWithURL}>
+          <a>open MicroApp By URL</a>
         </div>
       </div>
     </div>

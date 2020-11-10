@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-static": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -12,5 +13,8 @@
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0"
+  },
+  "devDependencies": {
+    "serve": "^11.3.2"
   }
 }
