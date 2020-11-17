@@ -10,6 +10,9 @@ export default function UI() {
       alita.ui.setNavBar({ backgroundColor: '#000', color: '#FFF', fontSize: 20 });
     }
   }
+  const setBackgroundColor = () => {
+    alita.ui.setBackgroundColor({ backgroundColor: '#0000FF' });
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -22,6 +25,9 @@ export default function UI() {
         </div>
         <div className={styles.cell} onClick={() => setNavBarApi('dark')}>
           <a>setNavBar(Dark)</a>
+        </div>
+        <div className={styles.cell} onClick={() => setBackgroundColor()}>
+          <a>setBackgroundColor</a>
         </div>
       </div>
     </div>
