@@ -13,6 +13,9 @@ export default function UI() {
   const setBackgroundColor = () => {
     alita.ui.setBackgroundColor({ backgroundColor: '#0000FF' });
   }
+  const setStatusBar = (theme) => {
+    alita.ui.setStatusBar({ theme });
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -28,6 +31,12 @@ export default function UI() {
         </div>
         <div className={styles.cell} onClick={() => setBackgroundColor()}>
           <a>setBackgroundColor</a>
+        </div>
+        <div className={styles.cell} onClick={() => setStatusBar('light')}>
+          <a>setStatusBar(light)</a>
+        </div>
+        <div className={styles.cell} onClick={() => setStatusBar('dark')}>
+          <a>setStatusBar(dark)</a>
         </div>
       </div>
     </div>
