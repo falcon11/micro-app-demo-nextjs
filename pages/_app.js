@@ -1,7 +1,13 @@
 import '../styles/globals.css'
-import 'alita-micro';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const initAlita = async () => {
+      await import('alita-micro');
+    }
+    initAlita();
+  }, []);
   return <Component {...pageProps} />
 }
 
