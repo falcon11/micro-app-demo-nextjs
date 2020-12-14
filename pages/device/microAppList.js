@@ -27,6 +27,7 @@ export default function MicroAppList() {
       <div className={styles.list}>
         {appList.map((app => {
           return <div key={app.appid} className={styles.cell}>
+            <img className={styles.cellImage} src={app.appIconUrl} />
             <a onClick={() => openMicroAppApi(app)}>{app.appName}</a>
           </div>
         }))}
