@@ -19,6 +19,10 @@ export default function Home() {
       name: 'File',
       href: '/file',
     },
+    {
+      name: 'Custom',
+      href: '/custom'
+    }
   ]
   return (
     <div className={styles.container}>

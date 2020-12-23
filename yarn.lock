@@ -1375,10 +1375,10 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alita-micro@^0.1.0:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/alita-micro/-/alita-micro-0.1.4.tgz#2e59ae966de946d0661dd6f40b894e0da5163249"
-  integrity sha512-lvTste5DcZo2B4ceYFYItTTpKXWhBX8llvxFdkox2SYaFzzwhrAoNKkndc0ujAriCfO58tBy7I64isEg8TOqaA==
+alita-micro@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/alita-micro/download/alita-micro-0.2.0.tgz#81c2e58ecf7cdec1140b8c43161835115c054269"
+  integrity sha1-gcLljs983sEUC4xDFhg1EVwFQmk=
 
 ally.js@1.4.1:
   version "1.4.1"
