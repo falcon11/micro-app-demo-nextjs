@@ -1375,7 +1375,7 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alita-micro@0.2.0:
+alita-micro@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npm.taobao.org/alita-micro/download/alita-micro-0.2.0.tgz#81c2e58ecf7cdec1140b8c43161835115c054269"
   integrity sha1-gcLljs983sEUC4xDFhg1EVwFQmk=
