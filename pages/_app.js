@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
-import Plugins from "./plugins";
+import Plugins from "../plugins";
 
 function MyApp({ Component, pageProps }) {
   const [isAlitaMicroLoaded, setIsAlitaMicroLoaded] = useState(false);
