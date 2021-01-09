@@ -20,6 +20,10 @@ export default function Home() {
       href: '/file',
     },
     {
+      name: 'Location',
+      href: '/location'
+    },
+    {
       name: 'Custom',
       href: '/custom'
     }
