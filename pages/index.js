@@ -24,6 +24,10 @@ export default function Home() {
       href: '/location'
     },
     {
+      name: 'Notice',
+      href: '/notice',
+    },
+    {
       name: 'Custom',
       href: '/custom'
     }
