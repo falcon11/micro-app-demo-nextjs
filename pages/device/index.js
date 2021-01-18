@@ -70,6 +70,9 @@ export default function Device() {
       url: 'http://maps.apple.com/?saddr=Cupertino&daddr=San+Francisco'
     })
   }
+  const closeMicroApp = async () => {
+    await alita.device.closeMicroApp();
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -115,6 +118,9 @@ export default function Device() {
         </div>
         <div className={styles.cell} onClick={openAppleMap}>
           <a>openAppleMap</a>
+        </div>
+        <div className={styles.cell} onClick={closeMicroApp}>
+          <a>closeMicroApp</a>
         </div>
       </div>
     </div>
